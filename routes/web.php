@@ -23,6 +23,9 @@ use App\Models\Task;
   return view('welcome');
 });*/
 
+//laralvel8ルートバインディング
+//自動デプロイ機能追加
+
 Route::group(['middleware' => 'auth'], function() {
   Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
